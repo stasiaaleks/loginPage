@@ -6,7 +6,25 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="form">
+<div class="login-container">
+    <form class="login-form" method="post" action="/login" th:object="${loginRequest}">
+        <h1>Welcome Back</h1>
+        <p>Sign in here</p>
+        <div class="input-group">
+            <input type="text" id="login" name="login" placeholder="Login" required>
+        </div>
+        <div class="input-group">
+            <input type="password" id="password" name="password" placeholder="Password" required>
+        </div>
+        <button type="submit">Sign in</button>
+        <div class="bottom-text">
+            <p>Don't have an account? <a href="/register">Sign Up</a></p>
+            <p><a href="#">Forgot password?</a></p>
+        </div>
+    </form>
+</div>
+
+<!--<div class="form">
     <form method="post" action="/login" th:object="${loginRequest}">
         <h2>Login</h2>
         <div class="input-box">
@@ -22,7 +40,7 @@
         </div>
         <a href="/register">Navigate to register</a>
     </form>
-</div>
+</div>-->
 
 </body>
 </html>
