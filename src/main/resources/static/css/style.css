@@ -14,6 +14,23 @@ body {
     margin: 0;
 }
 
+.btn-link {
+    padding: 15px;
+    border: none;
+    margin-bottom: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-link:hover {
+    background-color: #0056b3;
+}
+
 .login-container {
     background-color: #fff;
     border-radius: 10px;
@@ -94,6 +111,60 @@ button:hover {
 
 .bottom-text a:hover {
     color: #0056b3;
+}
+
+.dropdown {
+    margin-bottom: 10px;
+}
+
+/*TODO: fix dropbtn on hover*/
+
+.dropbtn {
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: white;
+    color: #777;
+    width: 100%;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    cursor: pointer;
+    text-align: left;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.dropdown-content_role-name {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    margin-left: 5px;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #007bff;
+    transition: all 0.3s ease;
+}
+
+.dropdown-content_role-name:focus {
+    border-color: #000;
+    outline: none;
+}
+
+.dropdown-content_role-name:hover {
+    background-color: #0056b3;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 /* Responsive */
